@@ -1,12 +1,9 @@
- const ItemListContainer = (props) => {
+ const ItemListContainer = ({greeting}) => {
     return (
-      <main className="min-h-96 container mx-auto">
-        <h2 className="text-2xl text-center font-bold">{props.grettings}</h2>
-        
-      </main>
-    );
-     
-  
-  };
+      <div>
+        <h1>{greeting}</h1>
+      </div>
+    )
+  }
   
   export default ItemListContainer;
