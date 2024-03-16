@@ -1,6 +1,6 @@
 import'./ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
-import {getProductById} from '../ItemDetail/ItemDetail'
+import {getProductById} from '../NavBar/asyncMock'
 
 const ItemDetailContainer = () => {
     const [product, serProduct] = useState(null)
