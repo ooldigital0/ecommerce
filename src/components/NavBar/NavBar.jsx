@@ -12,6 +12,7 @@ const NavBar = () => {
                 <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Ayurveda</NavLink>
                 <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Astrología</NavLink>
                 <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Lunar</NavLink>
+                <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Tzolkin</NavLink>
                 </div>
             <CartWidget/>    
         </nav>
