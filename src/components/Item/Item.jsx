@@ -10,7 +10,7 @@ const Item =({id, name, img, price, stock}) => {
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className='ItemImg'/>
+                <img src={img} style={{ width: 15}} alt={name} className='ItemImg'/>
             </picture>
             <section>
                 <p className='Info'>
@@ -21,7 +21,7 @@ const Item =({id, name, img, price, stock}) => {
                 </p>
             </section>
             <footer className='ItemFooter'>
-                <link to={`/item/${id}`} className='Option'>Ver detalle</link>
+                <button to={`/item/${id}`} className='Option'>Ver detalle</button>
             </footer>
         </article>
     )

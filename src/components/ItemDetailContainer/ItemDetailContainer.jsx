@@ -6,13 +6,13 @@ import { useParams } from 'react-router-dom'
 
 
 const ItemDetailContainer = () => {
-    const [product, serProduct] = useState(null)
+    const [product, setProduct] = useState(null)
     
     const { itemId} = useParams()
     
     useEffect(() => {
         getProductById('1')
-        .then(Response => {
+        .then(response => {
             setProduct(response)
         })
         .catch(error => {

@@ -6,16 +6,26 @@ const NavBar = () => {
     return (
         <nav className='NavBar'>
             <Link to='/'>
-            <h3>Ecommerce</h3>
+                <h3>Infinita Serendipia</h3>
             </Link>
             <div className='Categories'>
-                <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Ayurveda</NavLink>
-                <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Astrología</NavLink>
-                <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Lunar</NavLink>
-                <NavLink to={`/category/ebook`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guía Tzolkin</NavLink>
-                </div>
-            <CartWidget/>    
+                <button className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+                    <NavLink to={`/category/ebook`}>Guía Ayurveda</NavLink>
+                </button>
+                <button className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+                    <NavLink to={`/category/ebook`}>Guía Astrología</NavLink>
+                </button>
+                <button className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+                    <NavLink to={`/category/ebook`}>Guía Lunar</NavLink>
+                </button>
+                <button className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+                    <NavLink to={`/category/ebook`}>Guía Tzolkin</NavLink>
+                </button>
+            </div>
+            <CartWidget/>
+            <span></span>
         </nav>
     )
 }
+
 export default NavBar

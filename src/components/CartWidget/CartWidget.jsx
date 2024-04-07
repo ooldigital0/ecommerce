@@ -1,10 +1,10 @@
 import bolsa from './assets/bolsa.svg'
 const CartWidget = () => {
     return (
-        <div>
-            <img src={bolsa} alt='bolsa'/>
-            0
-        </div>
+    <button className="CartWidget">
+        <img src={bolsa} alt="bolsa" />
+        <span>0</span>
+    </button>
     );
 }
 export default CartWidget;
