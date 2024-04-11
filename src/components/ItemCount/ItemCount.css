@@ -1,0 +1,55 @@
+/* ItemCount.css */
+.Counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .Button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #b4aaaa; /* Color más claro */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  .Button:hover {
+    border-color: white; /* Cambiar el color del borde al hacer hover */
+  }
+  
+  .Button:active {
+    outline: none; /* Quitar el borde al hacer clic */
+  }
+  
+  .Number {
+    margin: 0 10px;
+  }
+  
+  .Button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .Button.addToCart {
+    background-color: pink; /* Color de fondo rosado */
+  }
+  
+  .Button.addToCart:hover {
+    background-color: #ffb3b3; /* Color de fondo rosado claro al hacer hover */
+  }
+  
+  .CartWidget:hover {
+    background-color: #ddd;
+    border-color: white;
+  }
+      
